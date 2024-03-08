@@ -9,7 +9,7 @@ const router = useRouter()
 const bookStore = useBookStore()
 
 const mode = ref('create')
-const bookIndex = ref(0)
+const bookIndex = ref(-1) // ทำไมต้องใส่ -1 เพราะถ้าเวลาหา index แล้วไม่เจอส่วนมากโปรแกรมจะแทนให้เป็น -1  เลยใส่ให้เป็น -1 เพื่อป้องกันความสับสน
 
 const bookData = reactive({
     name: '',
